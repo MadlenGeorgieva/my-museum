@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Viking Age Treasures",
+        "category": "History",
+        "description": "Explore artifacts and weapons from the Viking era.",
+        "tags": ["interactive", "family-friendly"],
+        "image": "/images/vikings.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Modern Art Gallery",
+        "category": "Art",
+        "description": "A curated collection of contemporary Danish art.",
+        "tags": ["temporary", "guided tour"],
+        "image": "/images/modern-art.jpg"
+    }
+]
