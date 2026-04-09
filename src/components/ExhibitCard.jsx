@@ -1,6 +1,25 @@
+import { useState, useEffect } from 'react';
 import styles from "./ExhibitCard.module.css";
 
 export default function ExhibitCard({ exhibit }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Get images array or fallback to single image or placeholder
+  const images = exhibit.images || (exhibit.image ? [exhibit.image] : []);
+
+  // Auto-cycle through images every 3 seconds
+  useEffect(() => {
+    if (images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        (prevIndex + 1) % images.length
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   // Generate a placeholder image based on plant type
   const getPlaceholderImage = (title) => {
     return `https://via.placeholder.com/400x300?text=${encodeURIComponent(title)}`;
@@ -13,13 +32,27 @@ export default function ExhibitCard({ exhibit }) {
     exhibit.category
   ].filter(Boolean);
 
+  const currentImage = images.length > 0 ? images[currentImageIndex] : getPlaceholderImage(exhibit.title);
+
   return (
     <div className={styles.card}>
-      <img
-        src={exhibit.image || getPlaceholderImage(exhibit.title)}
-        alt={exhibit.title}
-        className={styles.image}
-      />
+      <div className={styles.imageContainer}>
+        <img
+          src={currentImage}
+          alt={exhibit.title}
+          className={styles.image}
+        />
+        {images.length > 1 && (
+          <div className={styles.imageIndicators}>
+            {images.map((_, index) => (
+              <span
+                key={index}
+                className={`${styles.indicator} ${index === currentImageIndex ? styles.active : ''}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
 
       <div className={styles.content}>
         <h2 className={styles.title}>{exhibit.title}</h2>

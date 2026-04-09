@@ -14,7 +14,8 @@
       "Small creamy flowers",
       "Fleshy fruit (drupes)"
     ],
-    "adaptation": "Thick, leathery leaves reduce water loss and help survive drought"
+    "adaptation": "Thick, leathery leaves reduce water loss and help survive drought",
+    "images": ["/images/olive1.jpg", "/images/olive2.jpg"]
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
       "Strong fragrance",
       "Woody stems at the base"
     ],
-    "adaptation": "Aromatic oils and narrow leaves protect against heat and reduce water loss"
+    "adaptation": "Aromatic oils and narrow leaves protect against heat and reduce water loss",
+    "images": ["/images/lavender1.jpg", "/images/lavender2.jpg"]
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
       "Woody stems",
       "Strong scent"
     ],
-    "adaptation": "Small waxy leaves reduce water loss in dry environments"
+    "adaptation": "Small waxy leaves reduce water loss in dry environments",
+    "images": ["/images/rosemary1.jpg", "/images/rosemary2.jpg"]
   },
   {
     "id": 4,
@@ -64,7 +67,8 @@
       "Aerial roots",
       "Often grows on trees instead of soil"
     ],
-    "adaptation": "Epiphytic growth helps orchids reach light without competing on the forest floor"
+    "adaptation": "Epiphytic growth helps orchids reach light without competing on the forest floor",
+    "images": ["/images/orchid1.jpg", "/images/orchid2.jpg"]
   },
   {
     "id": 5,
@@ -80,7 +84,8 @@
       "Pseudostem made from leaf bases",
       "Hanging fruit clusters"
     ],
-    "adaptation": "Fast growth and large leaves allow efficient light capture in humid climates"
+    "adaptation": "Fast growth and large leaves allow efficient light capture in humid climates",
+    "images": ["/images/bananaplant1.jpg", "/images/bananaplant2.jpg"]
   },
   {
     "id": 6,
@@ -97,7 +102,8 @@
       "Pinnate leaves",
       "Woody seed capsules"
     ],
-    "adaptation": "Grows very tall to compete for sunlight in dense forests"
+    "adaptation": "Grows very tall to compete for sunlight in dense forests",
+    "images": ["/images/mahogany1.jpg", "/images/mahogany2.jpg"]
   },
   {
     "id": 7,
@@ -114,7 +120,8 @@
       "Straight trunk",
       "Evergreen"
     ],
-    "adaptation": "Needle leaves help tolerate cold temperatures and reduce moisture loss"
+    "adaptation": "Needle leaves help tolerate cold temperatures and reduce moisture loss",
+    "images": ["/images/fir1.jpg", "/images/fir2.jpg"]
   },
   {
     "id": 8,
@@ -131,7 +138,8 @@
       "Reproduces by spores",
       "Forms soft green mats"
     ],
-    "adaptation": "Absorbs water directly and helps retain moisture in ecosystems"
+    "adaptation": "Absorbs water directly and helps retain moisture in ecosystems",
+    "images": ["/images/moss1.jpg", "/images/moss2.jpg"]
   },
   {
     "id": 9,
@@ -147,7 +155,8 @@
       "Showy clustered flowers",
       "Woody branches"
     ],
-    "adaptation": "Thrives in moist, acidic soil and supports pollinators"
+    "adaptation": "Thrives in moist, acidic soil and supports pollinators",
+    "images": ["/images/rhodendron1.jpg", "/images/rhodendron2.jpg", "/images/rhodendron3.jpg"]
   },
   {
     "id": 10,
@@ -164,7 +173,8 @@
       "Waxy surface",
       "Shallow widespread roots"
     ],
-    "adaptation": "Stores water and minimizes water loss in dry environments"
+    "adaptation": "Stores water and minimizes water loss in dry environments",
+    "images": ["/images/cactus1.jpg", "/images/cactus2.jpg"]
   },
   {
     "id": 11,
@@ -181,7 +191,8 @@
       "Gel-filled tissues",
       "Tubular flowers"
     ],
-    "adaptation": "Stores water in leaves to survive long dry periods"
+    "adaptation": "Stores water in leaves to survive long dry periods",
+    "images": ["/images/aloe1.jpg", "/images/aloe2.jpg"]
   },
   {
     "id": 12,
@@ -198,6 +209,7 @@
       "Tall flowering stalk",
       "Deep roots"
     ],
-    "adaptation": "Tolerates drought and poor soils with strong roots and tough leaves"
+    "adaptation": "Tolerates drought and poor soils with strong roots and tough leaves",
+    "images": ["/images/yucca1.jpg", "/images/yucca2.jpg"]
   }
 ]
