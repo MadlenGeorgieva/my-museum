@@ -1,4 +1,4 @@
-import styles from "./ExhibitCard.module.css";
+
 
 export default function ExhibitCard({ exhibit }) {
   return (
