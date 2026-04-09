@@ -20,10 +20,6 @@ export default function ExhibitCard({ exhibit }) {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  // Generate a placeholder image based on plant type
-  const getPlaceholderImage = (title) => {
-    return `https://via.placeholder.com/400x300?text=${encodeURIComponent(title)}`;
-  };
 
   // Create tags from available data
   const tags = [
