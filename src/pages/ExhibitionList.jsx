@@ -36,10 +36,10 @@ export default function ExhibitionList({ exhibitions }) {
               onClick={() => toggleTag(tag)}
               style={{
                 padding: "0.5rem 1rem",
-                border: "2px solid #3498db",
+                border: "2px solid #30502c",
                 borderRadius: "20px",
-                backgroundColor: selectedTags.includes(tag) ? "#3498db" : "white",
-                color: selectedTags.includes(tag) ? "white" : "#3498db",
+                backgroundColor: selectedTags.includes(tag) ? "#30502c" : "white",
+                color: selectedTags.includes(tag) ? "white" : "#30502c",
                 cursor: "pointer",
                 fontSize: "0.9rem",
                 fontWeight: "500",
@@ -58,7 +58,7 @@ export default function ExhibitionList({ exhibitions }) {
               style={{
                 marginLeft: "1rem",
                 padding: "0.3rem 0.8rem",
-                backgroundColor: "#e74c3c",
+                backgroundColor: "#30502c",
                 color: "white",
                 border: "none",
                 borderRadius: "15px",
