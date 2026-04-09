@@ -1,5 +1,5 @@
 // Import the JSON file — Vite turns it into a JS array automatically
-import exhibitions from "../data/exhibitions.json";
+import exhibitions from "../data/museum.json";
 function ExhibitionList() {
 // You can use exhibitions directly — no useState or useEffect needed!
 return (
