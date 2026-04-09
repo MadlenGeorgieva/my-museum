@@ -1,15 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ExhibitionList from "./pages/ExhibitionList";
-function App() {
-return (
-<BrowserRouter>
-<Routes>
-<Route path="/" element={<HomePage />} />
-<Route path="/exhibitions" element={<ExhibitionList />} />
-{/* Add more routes as you build more pages */}
-</Routes>
-</BrowserRouter>
-);
+import Layout from "./components/Layout";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ExhibitionList from "./components/ExhibitionList";
+
+// import your data
+import exhibitions from "./data/museum.json";
+
+export default function App() {
+  return (
+    <Layout>
+      <Header />
+
+      <main>
+        <ExhibitionList exhibitions={exhibitions} />
+      </main>
+
+      <Footer />
+    </Layout>
+  );
 }
-export default App
