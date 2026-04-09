@@ -1,18 +1,203 @@
 [
-    {
-        "id": 1,
-        "title": "Viking Age Treasures",
-        "category": "History",
-        "description": "Explore artifacts and weapons from the Viking era.",
-        "tags": ["interactive", "family-friendly"],
-        "image": "/images/vikings.jpg"
-    },
-    {
-        "id": 2,
-        "title": "Modern Art Gallery",
-        "category": "Art",
-        "description": "A curated collection of contemporary Danish art.",
-        "tags": ["temporary", "guided tour"],
-        "image": "/images/modern-art.jpg"
-    }
+  {
+    "id": 1,
+    "title": "Olive",
+    "category": "Plants",
+    "description": "A drought-resistant Mediterranean tree known for its fruit and oil production.",
+    "scientific_name": "Olea europaea",
+    "plant_type": "Evergreen tree",
+    "native_region": "Mediterranean Basin",
+    "habitat": "Dry, rocky areas with hot summers and mild, wet winters",
+    "characteristics": [
+      "Narrow gray-green leaves",
+      "Twisted trunk with age",
+      "Small creamy flowers",
+      "Fleshy fruit (drupes)"
+    ],
+    "adaptation": "Thick, leathery leaves reduce water loss and help survive drought"
+  },
+  {
+    "id": 2,
+    "title": "Lavender",
+    "category": "Plants",
+    "description": "An aromatic shrub valued for its fragrance and purple flowers.",
+    "scientific_name": "Lavandula angustifolia",
+    "plant_type": "Aromatic flowering shrub",
+    "native_region": "Mediterranean region",
+    "habitat": "Dry sunny slopes with well-drained soil",
+    "characteristics": [
+      "Narrow silvery leaves",
+      "Purple flower spikes",
+      "Strong fragrance",
+      "Woody stems at the base"
+    ],
+    "adaptation": "Aromatic oils and narrow leaves protect against heat and reduce water loss"
+  },
+  {
+    "id": 3,
+    "title": "Rosemary",
+    "category": "Plants",
+    "description": "A fragrant evergreen shrub commonly used in cooking and medicine.",
+    "scientific_name": "Salvia rosmarinus",
+    "plant_type": "Evergreen aromatic shrub",
+    "native_region": "Mediterranean region",
+    "habitat": "Coastal and rocky dry areas with full sun",
+    "characteristics": [
+      "Needle-like leaves",
+      "Blue to pale violet flowers",
+      "Woody stems",
+      "Strong scent"
+    ],
+    "adaptation": "Small waxy leaves reduce water loss in dry environments"
+  },
+  {
+    "id": 4,
+    "title": "Orchid",
+    "category": "Plants",
+    "description": "A diverse family of flowering plants often found growing on trees in tropical forests.",
+    "scientific_name": "Orchidaceae",
+    "plant_type": "Flowering plant (often epiphytic)",
+    "native_region": "Worldwide, especially tropical rainforests",
+    "habitat": "Warm, humid forests with high rainfall",
+    "characteristics": [
+      "Complex flowers",
+      "Aerial roots",
+      "Often grows on trees instead of soil"
+    ],
+    "adaptation": "Epiphytic growth helps orchids reach light without competing on the forest floor"
+  },
+  {
+    "id": 5,
+    "title": "Banana Plant",
+    "category": "Plants",
+    "description": "A large tropical plant known for its broad leaves and fruit clusters.",
+    "scientific_name": "Musa spp.",
+    "plant_type": "Large herbaceous flowering plant",
+    "native_region": "Southeast Asia and tropical regions",
+    "habitat": "Warm, wet tropical environments with rich soil",
+    "characteristics": [
+      "Huge broad leaves",
+      "Pseudostem made from leaf bases",
+      "Hanging fruit clusters"
+    ],
+    "adaptation": "Fast growth and large leaves allow efficient light capture in humid climates"
+  },
+  {
+    "id": 6,
+    "title": "Mahogany",
+    "category": "Plants",
+    "description": "A tall tropical hardwood tree valued for its strong wood.",
+    "scientific_name": "Swietenia macrophylla",
+    "plant_type": "Tropical hardwood tree",
+    "native_region": "Central and South America",
+    "habitat": "Lowland tropical rainforests",
+    "characteristics": [
+      "Tall straight trunk",
+      "Broad crown",
+      "Pinnate leaves",
+      "Woody seed capsules"
+    ],
+    "adaptation": "Grows very tall to compete for sunlight in dense forests"
+  },
+  {
+    "id": 7,
+    "title": "Fir",
+    "category": "Plants",
+    "description": "An evergreen conifer commonly found in cool mountain regions.",
+    "scientific_name": "Abies spp.",
+    "plant_type": "Coniferous tree",
+    "native_region": "Northern Hemisphere mountain regions",
+    "habitat": "Cool, moist mountain forests",
+    "characteristics": [
+      "Needle-like leaves",
+      "Upright cones",
+      "Straight trunk",
+      "Evergreen"
+    ],
+    "adaptation": "Needle leaves help tolerate cold temperatures and reduce moisture loss"
+  },
+  {
+    "id": 8,
+    "title": "Moss",
+    "category": "Plants",
+    "description": "A small non-vascular plant that forms green mats in moist environments.",
+    "scientific_name": "Bryophyta",
+    "plant_type": "Non-vascular plant",
+    "native_region": "Worldwide",
+    "habitat": "Damp, shaded forests and moist surfaces",
+    "characteristics": [
+      "Small leaf-like structures",
+      "No true roots",
+      "Reproduces by spores",
+      "Forms soft green mats"
+    ],
+    "adaptation": "Absorbs water directly and helps retain moisture in ecosystems"
+  },
+  {
+    "id": 9,
+    "title": "Rhododendron",
+    "category": "Plants",
+    "description": "A flowering shrub known for its vibrant clustered blooms.",
+    "scientific_name": "Rhododendron spp.",
+    "plant_type": "Flowering shrub or small tree",
+    "native_region": "Asia, Europe, North America",
+    "habitat": "Cool, humid forests with acidic soil",
+    "characteristics": [
+      "Broad leaves",
+      "Showy clustered flowers",
+      "Woody branches"
+    ],
+    "adaptation": "Thrives in moist, acidic soil and supports pollinators"
+  },
+  {
+    "id": 10,
+    "title": "Cactus",
+    "category": "Plants",
+    "description": "A desert plant adapted to survive in extremely dry conditions.",
+    "scientific_name": "Cactaceae",
+    "plant_type": "Succulent plant",
+    "native_region": "North and South America",
+    "habitat": "Arid deserts with very low rainfall",
+    "characteristics": [
+      "Water-storing stems",
+      "Spines instead of leaves",
+      "Waxy surface",
+      "Shallow widespread roots"
+    ],
+    "adaptation": "Stores water and minimizes water loss in dry environments"
+  },
+  {
+    "id": 11,
+    "title": "Aloe",
+    "category": "Plants",
+    "description": "A succulent plant known for its soothing gel and drought resistance.",
+    "scientific_name": "Aloe vera",
+    "plant_type": "Succulent flowering plant",
+    "native_region": "Arabian Peninsula",
+    "habitat": "Hot, dry regions with sandy or rocky soil",
+    "characteristics": [
+      "Thick fleshy leaves",
+      "Serrated edges",
+      "Gel-filled tissues",
+      "Tubular flowers"
+    ],
+    "adaptation": "Stores water in leaves to survive long dry periods"
+  },
+  {
+    "id": 12,
+    "title": "Yucca",
+    "category": "Plants",
+    "description": "A hardy plant adapted to dry and semi-arid environments.",
+    "scientific_name": "Yucca spp.",
+    "plant_type": "Shrub or perennial plant",
+    "native_region": "North and Central America",
+    "habitat": "Deserts and semi-arid grasslands",
+    "characteristics": [
+      "Sword-shaped leaves",
+      "Fibrous structure",
+      "Tall flowering stalk",
+      "Deep roots"
+    ],
+    "adaptation": "Tolerates drought and poor soils with strong roots and tough leaves"
+  }
 ]
