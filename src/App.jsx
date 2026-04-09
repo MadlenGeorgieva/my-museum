@@ -1,4 +1,3 @@
-import Layout from "./Layout";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ExhibitionList from "./pages/ExhibitionList";
@@ -8,7 +7,7 @@ import exhibitions from "./data/museum.json";
 
 export default function App() {
   return (
-    <Layout>
+    <>
       <Header />
 
       <main>
@@ -16,6 +15,6 @@ export default function App() {
       </main>
 
       <Footer />
-    </Layout>
+    </>
   );
 }
