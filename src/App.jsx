@@ -1,7 +1,7 @@
-import Layout from "./components/Layout";
+import Layout from "./Layout";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ExhibitionList from "./components/ExhibitionList";
+import ExhibitionList from "./pages/ExhibitionList";
 
 // import your data
 import exhibitions from "./data/museum.json";
