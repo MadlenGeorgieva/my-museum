@@ -7,10 +7,16 @@
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 0 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .nav a {

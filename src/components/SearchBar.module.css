@@ -1,0 +1,24 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  min-width: 220px;
+  outline: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.searchInput:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.18);
+}
