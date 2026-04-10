@@ -15,7 +15,7 @@
       "Fleshy fruit (drupes)"
     ],
     "adaptation": "Thick, leathery leaves reduce water loss and help survive drought",
-    "images": ["/images/olive1.jpg", "/images/olive2.jpg"],
+    "images": ["images/olive1.jpg", "images/olive2.jpg"],
     "tags": ["Mediterranean climate"]
   },
   {
@@ -34,7 +34,7 @@
       "Woody stems at the base"
     ],
     "adaptation": "Aromatic oils and narrow leaves protect against heat and reduce water loss",
-    "images": ["/images/lavender1.jpg", "/images/lavender2.jpg"],
+    "images": ["images/lavender1.jpg", "images/lavender2.jpg"],
     "tags": ["Mediterranean climate"]
   },
   {
@@ -53,7 +53,7 @@
       "Strong scent"
     ],
     "adaptation": "Small waxy leaves reduce water loss in dry environments",
-    "images": ["/images/rosemary1.jpg", "/images/rosemary2.jpg"],
+    "images": ["images/rosemary1.jpg", "images/rosemary2.jpg"],
     "tags": ["Mediterranean climate"]
   },
   {
@@ -71,7 +71,7 @@
       "Often grows on trees instead of soil"
     ],
     "adaptation": "Epiphytic growth helps orchids reach light without competing on the forest floor",
-    "images": ["/images/orchid1.jpg", "/images/orchid2.jpg"],
+    "images": ["images/orchid1.jpg", "images/orchid2.jpg"],
     "tags": ["Tropical rainforest"]
   },
   {
@@ -89,7 +89,7 @@
       "Hanging fruit clusters"
     ],
     "adaptation": "Fast growth and large leaves allow efficient light capture in humid climates",
-    "images": ["/images/bananaplant1.jpg", "/images/bananaplant2.jpg"],
+    "images": ["images/bananaplant1.jpg", "images/bananaplant2.jpg"],
     "tags": ["Tropical rainforest"]
   },
   {
@@ -108,7 +108,7 @@
       "Woody seed capsules"
     ],
     "adaptation": "Grows very tall to compete for sunlight in dense forests",
-    "images": ["/images/mahogany1.jpg", "/images/mahogany2.jpg"],
+    "images": ["images/mahogany1.jpg", "images/mahogany2.jpg"],
     "tags": ["Tropical rainforest"]
   },
   {
@@ -127,7 +127,7 @@
       "Evergreen"
     ],
     "adaptation": "Needle leaves help tolerate cold temperatures and reduce moisture loss",
-    "images": ["/images/fir1.jpg", "/images/fir2.jpg"],
+    "images": ["images/fir1.jpg", "images/fir2.jpg"],
     "tags": ["Humid mountain forest"]
   },
   {
@@ -146,7 +146,7 @@
       "Forms soft green mats"
     ],
     "adaptation": "Absorbs water directly and helps retain moisture in ecosystems",
-    "images": ["/images/moss1.jpg", "/images/moss2.jpg"],
+    "images": ["images/moss1.jpg", "images/moss2.jpg"],
     "tags": ["Humid mountain forest"]
   },
   {
@@ -164,7 +164,7 @@
       "Woody branches"
     ],
     "adaptation": "Thrives in moist, acidic soil and supports pollinators",
-    "images": ["/images/Rhododendron1.jpg", "/images/Rhododendron2.jpg", "/images/Rhododendron3.jpg"],
+    "images": ["images/Rhododendron1.jpg", "images/Rhododendron2.jpg", "images/Rhododendron3.jpg"],
     "tags": ["Humid mountain forest"]
   },
   {
@@ -183,7 +183,7 @@
       "Shallow widespread roots"
     ],
     "adaptation": "Stores water and minimizes water loss in dry environments",
-    "images": ["/images/cactus1.jpg", "/images/cactus2.jpg"],
+    "images": ["images/cactus1.jpg", "images/cactus2.jpg"],
     "tags": ["Dry desert"]
   },
   {
@@ -202,7 +202,7 @@
       "Tubular flowers"
     ],
     "adaptation": "Stores water in leaves to survive long dry periods",
-    "images": ["/images/aloe1.jpg", "/images/aloe2.jpg"],
+    "images": ["images/aloe1.jpg", "images/aloe2.jpg"],
     "tags": ["Dry desert"]
   },
   {
@@ -221,7 +221,7 @@
       "Deep roots"
     ],
     "adaptation": "Tolerates drought and poor soils with strong roots and tough leaves",
-    "images": ["/images/yucca1.jpg", "/images/yucca2.jpg"],
+    "images": ["images/yucca1.jpg", "images/yucca2.jpg"],
     "tags": ["Dry desert"]
   }
 ]
