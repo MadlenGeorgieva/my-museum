@@ -1,28 +1,33 @@
 import React from 'react';
 import styles from './HomePage.module.css';
+import heroImage from '../assets/hero-image.jpg';
+import mediterraneanImg from '../assets/mediterranean.jpg';
+import rainforestImg from '../assets/rainforest.jpg';
+import humidImg from '../assets/humid.jpg';
+import desertImg from '../assets/desert.jpg';
 
 export default function HomePage({ onNavigate }) {
   const climateCards = [
     {
-      image: "/images/mediterranean.jpg",
+      image: mediterraneanImg,
       alt: "Mediterranean",
       title: "Mediterranean Climate",
       tag: "Mediterranean climate",
     },
     {
-      image: "/images/rainforest.jpg",
+      image: rainforestImg,
       alt: "Tropical",
       title: "Tropical Rainforest",
       tag: "Tropical rainforest",
     },
     {
-      image: "/images/humid.jpg",
+      image: humidImg,
       alt: "Humid Mountain Forest",
       title: "Humid Mountain Forest",
       tag: "Humid mountain forest",
     },
     {
-      image: "/images/desert.jpg",
+      image: desertImg,
       alt: "Desert",
       title: "Dry Desert",
       tag: "Dry desert",
@@ -34,7 +39,7 @@ export default function HomePage({ onNavigate }) {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroImage}>
-          <img src="/images/hero-image.jpg" alt="Botanical Garden" />
+          <img src={heroImage} alt="Botanical Garden" />
           <div className={styles.heroText}>
             <p>
               Explore exotic plants in the middle of Aarhus C by travelling all around the world. start in the Mediterranean climate, move into the dry desert, the humid mountain forests and end the journey in the tropical rainforest.
@@ -73,7 +78,7 @@ export default function HomePage({ onNavigate }) {
       <section className={styles.climates}>
         <div className={styles.climateSection}>
           <div className={styles.climateImage}>
-            <img src="/images/mediterranean.jpg" alt="Mediterranean Climate" />
+            <img src={mediterraneanImg} alt="Mediterranean Climate" />
           </div>
           <div className={styles.climateText}>
             <h3>Mediterranean Climate</h3>
@@ -83,7 +88,7 @@ export default function HomePage({ onNavigate }) {
 
         <div className={styles.climateSection}>
           <div className={styles.climateImage}>
-            <img src="/images/rainforest.jpg" alt="Tropical Rainforest" />
+            <img src={rainforestImg} alt="Tropical Rainforest" />
           </div>
           <div className={styles.climateText}>
             <h3>Tropical Rainforest</h3>
@@ -93,7 +98,7 @@ export default function HomePage({ onNavigate }) {
 
         <div className={styles.climateSection}>
           <div className={styles.climateImage}>
-            <img src="/images/humid.jpg" alt="Humid Mountain Forest" />
+            <img src={humidImg} alt="Humid Mountain Forest" />
           </div>
           <div className={styles.climateText}>
             <h3>Humid Mountain Forest</h3>
@@ -103,7 +108,7 @@ export default function HomePage({ onNavigate }) {
 
         <div className={styles.climateSection}>
           <div className={styles.climateImage}>
-            <img src="/images/desert.jpg" alt="Dry Desert" />
+            <img src={desertImg} alt="Dry Desert" />
           </div>
           <div className={styles.climateText}>
             <h3>Dry Desert</h3>
