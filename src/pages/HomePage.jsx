@@ -1,7 +1,34 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 
-export default function HomePage() {
+export default function HomePage({ onNavigate }) {
+  const climateCards = [
+    {
+      image: "/images/mediterranean.jpg",
+      alt: "Mediterranean",
+      title: "Mediterranean Climate",
+      tag: "Mediterranean climate",
+    },
+    {
+      image: "/images/rainforest.jpg",
+      alt: "Tropical",
+      title: "Tropical Rainforest",
+      tag: "Tropical rainforest",
+    },
+    {
+      image: "/images/humid.jpg",
+      alt: "Humid Mountain Forest",
+      title: "Humid Mountain Forest",
+      tag: "Humid mountain forest",
+    },
+    {
+      image: "/images/desert.jpg",
+      alt: "Desert",
+      title: "Dry Desert",
+      tag: "Dry desert",
+    },
+  ];
+
   return (
     <div className={styles.homepage}>
       {/* Hero Section */}
@@ -10,7 +37,7 @@ export default function HomePage() {
           <img src="/images/hero-image.jpg" alt="Botanical Garden" />
           <div className={styles.heroText}>
             <p>
-              explore exotic plants in the middle of Aarhus C by travelling all around the world. start in the Mediterranean climate, move into the dry desert, the humid mountain forests and end the journey in the tropical rainforest.
+              Explore exotic plants in the middle of Aarhus C by travelling all around the world. start in the Mediterranean climate, move into the dry desert, the humid mountain forests and end the journey in the tropical rainforest.
             </p>
           </div>
         </div>
@@ -19,30 +46,20 @@ export default function HomePage() {
       {/* Featured Cards */}
       <section className={styles.featured}>
         <div className={styles.cardsGrid}>
-          <div className={styles.card}>
-            <img src="/images/mediterranean.jpg" alt="Mediterranean" />
-            <div className={styles.cardOverlay}>
-              <h3>Mediterranean Climate</h3>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <img src="/images/rainforest.jpg" alt="Tropical" />
-            <div className={styles.cardOverlay}>
-              <h3>Tropical Rainforest</h3>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <img src="/images/humid.jpg" alt="Humid Mountain Forest" />
-            <div className={styles.cardOverlay}>
-              <h3>Humid Mountain Forest</h3>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <img src="/images/desert.jpg" alt="Desert" />
-            <div className={styles.cardOverlay}>
-              <h3>Dry Desert</h3>
-            </div>
-          </div>
+          {climateCards.map((card) => (
+            <button
+              key={card.tag}
+              type="button"
+              className={styles.card}
+              onClick={() => onNavigate?.("plants", card.tag)}
+              style={{ border: "none", padding: 0, background: "none", cursor: "pointer" }}
+            >
+              <img src={card.image} alt={card.alt} />
+              <div className={styles.cardOverlay}>
+                <h3>{card.title}</h3>
+              </div>
+            </button>
+          ))}
         </div>
       </section>
 

@@ -1,11 +1,15 @@
 // Import the JSON file — Vite turns it into a JS array automatically
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ExhibitCard from "../components/ExhibitCard";
 import Searchfield from "../components/SearchBar";
 
-export default function ExhibitionList({ exhibitions }) {
+export default function ExhibitionList({ exhibitions, initialFilterTag = "" }) {
   const [searchValue, setSearchValue] = useState("");
-  const [selectedTags, setSelectedTags] = useState([]); // array of active tags
+  const [selectedTags, setSelectedTags] = useState(initialFilterTag ? [initialFilterTag] : []); // array of active tags
+
+  useEffect(() => {
+    setSelectedTags(initialFilterTag ? [initialFilterTag] : []);
+  }, [initialFilterTag]);
 
   // Toggle a tag: add it if not selected, remove it if already selected
   const toggleTag = (tag) => {

@@ -11,14 +11,22 @@ import exhibitions from "./data/museum.json";
 
 export default function App() {
   const [page, setPage] = useState("home");
+  const [selectedPlantTag, setSelectedPlantTag] = useState("");
+
+  const handleNavigate = (selectedPage, tag = "") => {
+    setPage(selectedPage);
+    setSelectedPlantTag(selectedPage === "plants" ? tag : "");
+  };
 
   return (
     <>
-      <Header onNavigate={(selectedPage) => setPage(selectedPage)} />
+      <Header onNavigate={handleNavigate} />
 
       <main>
-        {page === "home" && <HomePage />}
-        {page === "plants" && <ExhibitionList exhibitions={exhibitions} />}
+        {page === "home" && <HomePage onNavigate={handleNavigate} />}
+        {page === "plants" && (
+          <ExhibitionList exhibitions={exhibitions} initialFilterTag={selectedPlantTag} />
+        )}
         {page === "visit" && <VisitPage />}
       </main>
 
