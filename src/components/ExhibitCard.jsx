@@ -6,6 +6,11 @@ export default function ExhibitCard({ exhibit }) {
 
   // Get images array or fallback to single image or placeholder
   const images = exhibit.images || (exhibit.image ? [exhibit.image] : []);
+  const baseUrl = import.meta.env.BASE_URL || "/";
+  const resolveImagePath = (path) =>
+    path.startsWith("/")
+      ? `${baseUrl.replace(/\/$/, "")}${path}`
+      : path;
 
   // Auto-cycle through images every 3 seconds
   useEffect(() => {
@@ -20,6 +25,8 @@ export default function ExhibitCard({ exhibit }) {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const getPlaceholderImage = (title) =>
+    `https://via.placeholder.com/600x400?text=${encodeURIComponent(title)}`;
 
   // Create tags from available data
   const tags = [
@@ -28,7 +35,7 @@ export default function ExhibitCard({ exhibit }) {
     exhibit.category
   ].filter(Boolean);
 
-  const currentImage = images.length > 0 ? images[currentImageIndex] : getPlaceholderImage(exhibit.title);
+  const currentImage = images.length > 0 ? resolveImagePath(images[currentImageIndex]) : getPlaceholderImage(exhibit.title);
 
   return (
     <div className={styles.card}>
