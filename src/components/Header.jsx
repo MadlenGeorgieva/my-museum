@@ -8,9 +8,9 @@ export default function Header({ searchValue, onSearch }){
                 <div className={styles.links}>
                     <a href="#">Home</a>
                     <span className={styles.divider}> | </span>
-                    <a href="#">My Plants</a>
+                    <a href="#">Plants</a>
                     <span className={styles.divider}> | </span>
-                    <a href="#">About</a>
+                    <a href="#">Plan your visit</a>
                 </div>
                 <Searchfield filter={searchValue} handleinput={onSearch} />
             </nav>
