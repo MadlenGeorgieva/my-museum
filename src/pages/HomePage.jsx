@@ -44,7 +44,7 @@ export default function HomePage({ onNavigate }) {
               className={styles.heroButton}
               onClick={() => onNavigate?.("visit")}
             >
-              Opening Hours
+              Plan your visit
             </button>
           </div>
         </div>
