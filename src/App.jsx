@@ -9,6 +9,7 @@ import exhibitions from "./data/museum.json";
 
 export default function App() {
   const [searchValue, setSearchValue] = useState("");
+  const [showVisitForm, setShowVisitForm] = useState(false);
 
   const filteredExhibitions = exhibitions.filter((exhibit) =>
     exhibit.title.toLowerCase().includes(searchValue.toLowerCase()) ||
@@ -21,10 +22,15 @@ export default function App() {
       <Header
         searchValue={searchValue}
         onSearch={(event) => setSearchValue(event.target.value)}
+        onPlanVisit={() => setShowVisitForm(true)}
       />
 
       <main>
-        <HomePage />
+        <HomePage
+          showVisitForm={showVisitForm}
+          onPlanVisit={() => setShowVisitForm(true)}
+          onCloseVisitForm={() => setShowVisitForm(false)}
+        />
       </main>
 
       <Footer />
