@@ -1,8 +1,10 @@
 // Import the JSON file — Vite turns it into a JS array automatically
 import { useState } from "react";
 import ExhibitCard from "../components/ExhibitCard";
+import Searchfield from "../components/SearchBar";
 
 export default function ExhibitionList({ exhibitions }) {
+  const [searchValue, setSearchValue] = useState("");
   const [selectedTags, setSelectedTags] = useState([]); // array of active tags
 
   // Toggle a tag: add it if not selected, remove it if already selected
@@ -17,15 +19,31 @@ export default function ExhibitionList({ exhibitions }) {
   // Get all unique tags from all exhibitions
   const allTags = [...new Set(exhibitions.flatMap((exhibit) => exhibit.tags || []))];
 
-  // Filter: show all if no tags selected, otherwise show plants that have ANY of the selected tags
-  const filtered = exhibitions.filter((exhibit) =>
+  // Filter by search text first
+  const searched = exhibitions.filter((exhibit) => {
+    const search = searchValue.toLowerCase();
+    return (
+      exhibit.title.toLowerCase().includes(search) ||
+      exhibit.category.toLowerCase().includes(search) ||
+      exhibit.scientific_name.toLowerCase().includes(search)
+    );
+  });
+
+  // Then filter by selected tags
+  const filtered = searched.filter((exhibit) =>
     selectedTags.length === 0 ||
     selectedTags.some((tag) => exhibit.tags?.includes(tag))
   );
 
   return (
     <div>
-      {/* Tag Filter Section */}
+      <div style={{ marginBottom: "2rem", textAlign: "center" }}>
+        <Searchfield
+          filter={searchValue}
+          handleinput={(event) => setSearchValue(event.target.value)}
+        />
+      </div>
+
       <div style={{ marginBottom: "2rem", textAlign: "center" }}>
         <h3 style={{ marginBottom: "1rem", color: "#2c3e50" }}>Filter by Tags</h3>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", justifyContent: "center" }}>
@@ -52,7 +70,7 @@ export default function ExhibitionList({ exhibitions }) {
         </div>
         {selectedTags.length > 0 && (
           <p style={{ marginTop: "1rem", color: "#7f8c8d", fontSize: "0.9rem" }}>
-            Showing {filtered.length} of {exhibitions.length} plants
+            Showing {filtered.length} of {searched.length} plants
             <button
               onClick={() => setSelectedTags([])}
               style={{
