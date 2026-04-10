@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ExhibitionList from "./pages/ExhibitionList";
+import HomePage from "./pages/HomePage";
 
 // import your data
 import exhibitions from "./data/museum.json";
@@ -23,7 +24,7 @@ export default function App() {
       />
 
       <main>
-        <ExhibitionList exhibitions={filteredExhibitions} />
+        <HomePage />
       </main>
 
       <Footer />
