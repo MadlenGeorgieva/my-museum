@@ -39,6 +39,13 @@ export default function HomePage({ onNavigate }) {
             <p>
               Explore exotic plants in the middle of Aarhus C by travelling all around the world. start in the Mediterranean climate, move into the dry desert, the humid mountain forests and end the journey in the tropical rainforest.
             </p>
+            <button
+              type="button"
+              className={styles.heroButton}
+              onClick={() => onNavigate?.("visit")}
+            >
+              Opening Hours
+            </button>
           </div>
         </div>
       </section>
