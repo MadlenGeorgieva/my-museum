@@ -23,9 +23,9 @@ export default function ExhibitionList({ exhibitions }) {
   const searched = exhibitions.filter((exhibit) => {
     const search = searchValue.toLowerCase();
     return (
-      exhibit.title.toLowerCase().includes(search) ||
-      exhibit.category.toLowerCase().includes(search) ||
-      exhibit.scientific_name.toLowerCase().includes(search)
+      exhibit.title.toLowerCase().startsWith(search) ||
+      exhibit.category.toLowerCase().startsWith(search) ||
+      exhibit.scientific_name.toLowerCase().startsWith(search)
     );
   });
 
