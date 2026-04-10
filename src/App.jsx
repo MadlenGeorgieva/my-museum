@@ -41,7 +41,11 @@ export default function App() {
 
   return (
     <>
-      <Header onNavigate={handleNavigate} canGoBack={history.length > 0} />
+      <Header
+        onNavigate={handleNavigate}
+        canGoBack={history.length > 0}
+        currentPage={page}
+      />
 
       <main>
         {page === "home" && <HomePage onNavigate={handleNavigate} />}

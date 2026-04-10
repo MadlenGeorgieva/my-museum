@@ -1,20 +1,25 @@
 import styles from "./Header.module.css";
 
-export default function Header({ onNavigate, canGoBack }) {
+export default function Header({ onNavigate, canGoBack, currentPage }) {
+  const showBackButton = (currentPage === "plants" || currentPage === "visit") && canGoBack;
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div className={styles.links}>
-          <button
-            type="button"
-            className={styles.backButton}
-            onClick={() => onNavigate?.("back")}
-            disabled={!canGoBack}
-            aria-label="Back"
-          >
-            <span className={styles.backIcon}>➜</span>
-          </button>
-          <span className={styles.divider}>|</span>
+          {showBackButton && (
+            <>
+              <button
+                type="button"
+                className={styles.backButton}
+                onClick={() => onNavigate?.("back")}
+                aria-label="Back"
+              >
+                <span className={styles.backIcon}>➜</span>
+              </button>
+              <span className={styles.divider}>|</span>
+            </>
+          )}
           <a
             href="#"
             onClick={(event) => {
